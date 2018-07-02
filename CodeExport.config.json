@@ -1,0 +1,7 @@
+{
+	"Module Paths": {
+		"a_FileReformatter": "src/a_FileReformatter.bas",
+		"b_Categorizer": "src/b_Categorizer.bas",
+		"Sheet6": "src/Sheet6.cls"
+	}
+}
