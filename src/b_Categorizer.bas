@@ -18,18 +18,11 @@ Function Categorize()
             Sheet3.Range("F2") = cattype(0)
             Sheet3.Range("G2") = srchstr
             
-'            If cattype(1) = "MTG" Then
-'            sheet1.Range("A:K").AdvancedFilter _
-'                Action:=xlFilterInPlace, _
-'                CriteriaRange:=sheet3.Range("F1:H2"), _
-'                Unique:=False
-'            Else
             Sheet1.Range("A:K").AdvancedFilter _
                 Action:=xlFilterInPlace, _
                 CriteriaRange:=Sheet3.Range("F1:G2"), _
                 Unique:=False
-'            End If
-            
+
             Dim workingRng As Range
             Set workingRng = Sheet1.Range("A:K").SpecialCells(xlCellTypeVisible)
                 
