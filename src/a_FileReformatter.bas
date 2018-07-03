@@ -1,6 +1,7 @@
 Attribute VB_Name = "a_FileReformatter"
 Function RawReformatter()
 ' Add headers for later - "D,DATE,ACCOUNT,LOCATION,CURRENCY,CATEGORY,DESCRIPTION,TYPE,AMOUNT,DETAILS"
+    Sheet1.Cells.ClearFormats
     Sheet1.Rows(1).EntireRow.Insert
     Sheet1.Range("A1:K1") = Split("D,DATE,ROUTING,ACCOUNT,LOCATION,CURRENCY,CATEGORY,DESCRIPTION,TYPE,AMOUNT,DETAILS", ",")
 ' Unwrap text
